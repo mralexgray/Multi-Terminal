@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45B0E53714CB32A8004E29E7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B0E53614CB32A8004E29E7 /* Cocoa.framework */; };
+		45B0E54114CB32A8004E29E7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45B0E53F14CB32A8004E29E7 /* InfoPlist.strings */; };
+		45B0E54314CB32A8004E29E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B0E54214CB32A8004E29E7 /* main.m */; };
+		45B0E54714CB32A8004E29E7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 45B0E54514CB32A8004E29E7 /* Credits.rtf */; };
+		45B0E54A14CB32A8004E29E7 /* CDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B0E54914CB32A8004E29E7 /* CDocument.m */; };
+		45B0E54D14CB32A8004E29E7 /* CDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45B0E54B14CB32A8004E29E7 /* CDocument.xib */; };
+		45B0E55014CB32A8004E29E7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45B0E54E14CB32A8004E29E7 /* MainMenu.xib */; };
+		45B0E55314CB32A8004E29E7 /* CDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 45B0E55114CB32A8004E29E7 /* CDocument.xcdatamodeld */; };
+		45B0E55B14CB32A8004E29E7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B0E55A14CB32A8004E29E7 /* SenTestingKit.framework */; };
+		45B0E55C14CB32A8004E29E7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B0E53614CB32A8004E29E7 /* Cocoa.framework */; };
+		45B0E56414CB32A8004E29E7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45B0E56214CB32A8004E29E7 /* InfoPlist.strings */; };
+		45B0E56714CB32A8004E29E7 /* BayatchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B0E56614CB32A8004E29E7 /* BayatchTests.m */; };
+		45B0E56F14CB32A8004E29E7 /* BayatchImporter.mdimporter in Resources */ = {isa = PBXBuildFile; fileRef = 45B0E56C14CB32A8004E29E7 /* BayatchImporter.mdimporter */; };
+		45B0E57114CB32A8004E29E7 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B0E57014CB32A8004E29E7 /* CoreServices.framework */; };
+		45B0E57314CB32A8004E29E7 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B0E57214CB32A8004E29E7 /* CoreFoundation.framework */; };
+		45B0E57514CB32A8004E29E7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B0E57414CB32A8004E29E7 /* CoreData.framework */; };
+		45B0E57714CB32A8004E29E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B0E57614CB32A8004E29E7 /* Foundation.framework */; };
+		45B0E57D14CB32A8004E29E7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45B0E57B14CB32A8004E29E7 /* InfoPlist.strings */; };
+		45B0E57F14CB32A8004E29E7 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 45B0E57E14CB32A8004E29E7 /* main.c */; };
+		45B0E58114CB32A8004E29E7 /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B0E58014CB32A8004E29E7 /* GetMetadataForFile.m */; };
+		45B0E58414CB32A8004E29E7 /* MySpotlightImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B0E58314CB32A8004E29E7 /* MySpotlightImporter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		45B0E55D14CB32A8004E29E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45B0E52914CB32A8004E29E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45B0E53114CB32A8004E29E7;
+			remoteInfo = Bayatch;
+		};
+		45B0E56D14CB32A8004E29E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45B0E52914CB32A8004E29E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45B0E56B14CB32A8004E29E7;
+			remoteInfo = BayatchImporter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		45B0E53214CB32A8004E29E7 /* Bayatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bayatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45B0E53614CB32A8004E29E7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		45B0E53914CB32A8004E29E7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		45B0E53A14CB32A8004E29E7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		45B0E53B14CB32A8004E29E7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		45B0E53E14CB32A8004E29E7 /* Bayatch-Info.plist */ = {isa = PBXFileReference; path = "Bayatch-Info.plist"; sourceTree = "<group>"; };
+		45B0E54014CB32A8004E29E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		45B0E54214CB32A8004E29E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		45B0E54414CB32A8004E29E7 /* Bayatch-Prefix.pch */ = {isa = PBXFileReference; path = "Bayatch-Prefix.pch"; sourceTree = "<group>"; };
+		45B0E54614CB32A8004E29E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		45B0E54814CB32A8004E29E7 /* CDocument.h */ = {isa = PBXFileReference; path = CDocument.h; sourceTree = "<group>"; };
+		45B0E54914CB32A8004E29E7 /* CDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDocument.m; sourceTree = "<group>"; };
+		45B0E54C14CB32A8004E29E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CDocument.xib; sourceTree = "<group>"; };
+		45B0E54F14CB32A8004E29E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		45B0E55214CB32A8004E29E7 /* CDocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CDocument.xcdatamodel; sourceTree = "<group>"; };
+		45B0E55914CB32A8004E29E7 /* BayatchTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BayatchTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		45B0E55A14CB32A8004E29E7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		45B0E56114CB32A8004E29E7 /* BayatchTests-Info.plist */ = {isa = PBXFileReference; path = "BayatchTests-Info.plist"; sourceTree = "<group>"; };
+		45B0E56314CB32A8004E29E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		45B0E56514CB32A8004E29E7 /* BayatchTests.h */ = {isa = PBXFileReference; path = BayatchTests.h; sourceTree = "<group>"; };
+		45B0E56614CB32A8004E29E7 /* BayatchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BayatchTests.m; sourceTree = "<group>"; };
+		45B0E56C14CB32A8004E29E7 /* BayatchImporter.mdimporter */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BayatchImporter.mdimporter; sourceTree = BUILT_PRODUCTS_DIR; };
+		45B0E57014CB32A8004E29E7 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		45B0E57214CB32A8004E29E7 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		45B0E57414CB32A8004E29E7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		45B0E57614CB32A8004E29E7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		45B0E57A14CB32A8004E29E7 /* BayatchImporter-Info.plist */ = {isa = PBXFileReference; path = "BayatchImporter-Info.plist"; sourceTree = "<group>"; };
+		45B0E57C14CB32A8004E29E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		45B0E57E14CB32A8004E29E7 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		45B0E58014CB32A8004E29E7 /* GetMetadataForFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetMetadataForFile.m; sourceTree = "<group>"; };
+		45B0E58214CB32A8004E29E7 /* MySpotlightImporter.h */ = {isa = PBXFileReference; path = MySpotlightImporter.h; sourceTree = "<group>"; };
+		45B0E58314CB32A8004E29E7 /* MySpotlightImporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySpotlightImporter.m; sourceTree = "<group>"; };
+		45B0E58514CB32A8004E29E7 /* Importer Read Me.txt */ = {isa = PBXFileReference; path = "Importer Read Me.txt"; sourceTree = "<group>"; };
+		45B0E58614CB32A8004E29E7 /* BayatchImporter-Prefix.pch */ = {isa = PBXFileReference; path = "BayatchImporter-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45B0E52F14CB32A8004E29E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45B0E53714CB32A8004E29E7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45B0E55514CB32A8004E29E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45B0E55B14CB32A8004E29E7 /* SenTestingKit.framework in Frameworks */,
+				45B0E55C14CB32A8004E29E7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45B0E56914CB32A8004E29E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45B0E57114CB32A8004E29E7 /* CoreServices.framework in Frameworks */,
+				45B0E57314CB32A8004E29E7 /* CoreFoundation.framework in Frameworks */,
+				45B0E57514CB32A8004E29E7 /* CoreData.framework in Frameworks */,
+				45B0E57714CB32A8004E29E7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45B0E52714CB32A8004E29E7 = {
+			isa = PBXGroup;
+			children = (
+				45B0E53C14CB32A8004E29E7 /* Bayatch */,
+				45B0E55F14CB32A8004E29E7 /* BayatchTests */,
+				45B0E57814CB32A8004E29E7 /* BayatchImporter */,
+				45B0E53514CB32A8004E29E7 /* Frameworks */,
+				45B0E53314CB32A8004E29E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		45B0E53314CB32A8004E29E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45B0E53214CB32A8004E29E7 /* Bayatch.app */,
+				45B0E55914CB32A8004E29E7 /* BayatchTests.octest */,
+				45B0E56C14CB32A8004E29E7 /* BayatchImporter.mdimporter */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45B0E53514CB32A8004E29E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45B0E53614CB32A8004E29E7 /* Cocoa.framework */,
+				45B0E55A14CB32A8004E29E7 /* SenTestingKit.framework */,
+				45B0E57014CB32A8004E29E7 /* CoreServices.framework */,
+				45B0E57214CB32A8004E29E7 /* CoreFoundation.framework */,
+				45B0E57414CB32A8004E29E7 /* CoreData.framework */,
+				45B0E57614CB32A8004E29E7 /* Foundation.framework */,
+				45B0E53814CB32A8004E29E7 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		45B0E53814CB32A8004E29E7 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45B0E53914CB32A8004E29E7 /* AppKit.framework */,
+				45B0E53A14CB32A8004E29E7 /* CoreData.framework */,
+				45B0E53B14CB32A8004E29E7 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		45B0E53C14CB32A8004E29E7 /* Bayatch */ = {
+			isa = PBXGroup;
+			children = (
+				45B0E54814CB32A8004E29E7 /* CDocument.h */,
+				45B0E54914CB32A8004E29E7 /* CDocument.m */,
+				45B0E54B14CB32A8004E29E7 /* CDocument.xib */,
+				45B0E54E14CB32A8004E29E7 /* MainMenu.xib */,
+				45B0E55114CB32A8004E29E7 /* CDocument.xcdatamodeld */,
+				45B0E53D14CB32A8004E29E7 /* Supporting Files */,
+			);
+			path = Bayatch;
+			sourceTree = "<group>";
+		};
+		45B0E53D14CB32A8004E29E7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45B0E53E14CB32A8004E29E7 /* Bayatch-Info.plist */,
+				45B0E53F14CB32A8004E29E7 /* InfoPlist.strings */,
+				45B0E54214CB32A8004E29E7 /* main.m */,
+				45B0E54414CB32A8004E29E7 /* Bayatch-Prefix.pch */,
+				45B0E54514CB32A8004E29E7 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		45B0E55F14CB32A8004E29E7 /* BayatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				45B0E56514CB32A8004E29E7 /* BayatchTests.h */,
+				45B0E56614CB32A8004E29E7 /* BayatchTests.m */,
+				45B0E56014CB32A8004E29E7 /* Supporting Files */,
+			);
+			path = BayatchTests;
+			sourceTree = "<group>";
+		};
+		45B0E56014CB32A8004E29E7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45B0E56114CB32A8004E29E7 /* BayatchTests-Info.plist */,
+				45B0E56214CB32A8004E29E7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		45B0E57814CB32A8004E29E7 /* BayatchImporter */ = {
+			isa = PBXGroup;
+			children = (
+				45B0E58014CB32A8004E29E7 /* GetMetadataForFile.m */,
+				45B0E58214CB32A8004E29E7 /* MySpotlightImporter.h */,
+				45B0E58314CB32A8004E29E7 /* MySpotlightImporter.m */,
+				45B0E58514CB32A8004E29E7 /* Importer Read Me.txt */,
+				45B0E57914CB32A8004E29E7 /* Supporting Files */,
+			);
+			path = BayatchImporter;
+			sourceTree = "<group>";
+		};
+		45B0E57914CB32A8004E29E7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45B0E57A14CB32A8004E29E7 /* BayatchImporter-Info.plist */,
+				45B0E57B14CB32A8004E29E7 /* InfoPlist.strings */,
+				45B0E57E14CB32A8004E29E7 /* main.c */,
+				45B0E58614CB32A8004E29E7 /* BayatchImporter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45B0E53114CB32A8004E29E7 /* Bayatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45B0E58C14CB32A8004E29E7 /* Build configuration list for PBXNativeTarget "Bayatch" */;
+			buildPhases = (
+				45B0E52E14CB32A8004E29E7 /* Sources */,
+				45B0E52F14CB32A8004E29E7 /* Frameworks */,
+				45B0E53014CB32A8004E29E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45B0E56E14CB32A8004E29E7 /* PBXTargetDependency */,
+			);
+			name = Bayatch;
+			productName = Bayatch;
+			productReference = 45B0E53214CB32A8004E29E7 /* Bayatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		45B0E55814CB32A8004E29E7 /* BayatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45B0E58F14CB32A8004E29E7 /* Build configuration list for PBXNativeTarget "BayatchTests" */;
+			buildPhases = (
+				45B0E55414CB32A8004E29E7 /* Sources */,
+				45B0E55514CB32A8004E29E7 /* Frameworks */,
+				45B0E55614CB32A8004E29E7 /* Resources */,
+				45B0E55714CB32A8004E29E7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45B0E55E14CB32A8004E29E7 /* PBXTargetDependency */,
+			);
+			name = BayatchTests;
+			productName = BayatchTests;
+			productReference = 45B0E55914CB32A8004E29E7 /* BayatchTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		45B0E56B14CB32A8004E29E7 /* BayatchImporter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45B0E58914CB32A8004E29E7 /* Build configuration list for PBXNativeTarget "BayatchImporter" */;
+			buildPhases = (
+				45B0E56814CB32A8004E29E7 /* Sources */,
+				45B0E56914CB32A8004E29E7 /* Frameworks */,
+				45B0E56A14CB32A8004E29E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BayatchImporter;
+			productName = BayatchImporter;
+			productReference = 45B0E56C14CB32A8004E29E7 /* BayatchImporter.mdimporter */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45B0E52914CB32A8004E29E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = toxicsoftware.com;
+			};
+			buildConfigurationList = 45B0E52C14CB32A8004E29E7 /* Build configuration list for PBXProject "Bayatch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 45B0E52714CB32A8004E29E7;
+			productRefGroup = 45B0E53314CB32A8004E29E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45B0E53114CB32A8004E29E7 /* Bayatch */,
+				45B0E55814CB32A8004E29E7 /* BayatchTests */,
+				45B0E56B14CB32A8004E29E7 /* BayatchImporter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45B0E53014CB32A8004E29E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45B0E54114CB32A8004E29E7 /* InfoPlist.strings in Resources */,
+				45B0E54714CB32A8004E29E7 /* Credits.rtf in Resources */,
+				45B0E54D14CB32A8004E29E7 /* CDocument.xib in Resources */,
+				45B0E55014CB32A8004E29E7 /* MainMenu.xib in Resources */,
+				45B0E56F14CB32A8004E29E7 /* BayatchImporter.mdimporter in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45B0E55614CB32A8004E29E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45B0E56414CB32A8004E29E7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45B0E56A14CB32A8004E29E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45B0E57D14CB32A8004E29E7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		45B0E55714CB32A8004E29E7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45B0E52E14CB32A8004E29E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45B0E54314CB32A8004E29E7 /* main.m in Sources */,
+				45B0E54A14CB32A8004E29E7 /* CDocument.m in Sources */,
+				45B0E55314CB32A8004E29E7 /* CDocument.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45B0E55414CB32A8004E29E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45B0E56714CB32A8004E29E7 /* BayatchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45B0E56814CB32A8004E29E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45B0E57F14CB32A8004E29E7 /* main.c in Sources */,
+				45B0E58114CB32A8004E29E7 /* GetMetadataForFile.m in Sources */,
+				45B0E58414CB32A8004E29E7 /* MySpotlightImporter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		45B0E55E14CB32A8004E29E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45B0E53114CB32A8004E29E7 /* Bayatch */;
+			targetProxy = 45B0E55D14CB32A8004E29E7 /* PBXContainerItemProxy */;
+		};
+		45B0E56E14CB32A8004E29E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45B0E56B14CB32A8004E29E7 /* BayatchImporter */;
+			targetProxy = 45B0E56D14CB32A8004E29E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		45B0E53F14CB32A8004E29E7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45B0E54014CB32A8004E29E7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		45B0E54514CB32A8004E29E7 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45B0E54614CB32A8004E29E7 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		45B0E54B14CB32A8004E29E7 /* CDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45B0E54C14CB32A8004E29E7 /* en */,
+			);
+			name = CDocument.xib;
+			sourceTree = "<group>";
+		};
+		45B0E54E14CB32A8004E29E7 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45B0E54F14CB32A8004E29E7 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		45B0E56214CB32A8004E29E7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45B0E56314CB32A8004E29E7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		45B0E57B14CB32A8004E29E7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45B0E57C14CB32A8004E29E7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		45B0E58714CB32A8004E29E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		45B0E58814CB32A8004E29E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		45B0E58A14CB32A8004E29E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BayatchImporter/BayatchImporter-Prefix.pch";
+				INFOPLIST_FILE = "BayatchImporter/BayatchImporter-Info.plist";
+				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
+				LIBRARY_STYLE = BUNDLE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = mdimporter;
+			};
+			name = Debug;
+		};
+		45B0E58B14CB32A8004E29E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BayatchImporter/BayatchImporter-Prefix.pch";
+				INFOPLIST_FILE = "BayatchImporter/BayatchImporter-Info.plist";
+				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
+				LIBRARY_STYLE = BUNDLE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = mdimporter;
+			};
+			name = Release;
+		};
+		45B0E58D14CB32A8004E29E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bayatch/Bayatch-Prefix.pch";
+				INFOPLIST_FILE = "Bayatch/Bayatch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		45B0E58E14CB32A8004E29E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bayatch/Bayatch-Prefix.pch";
+				INFOPLIST_FILE = "Bayatch/Bayatch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		45B0E59014CB32A8004E29E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Bayatch.app/Contents/MacOS/Bayatch";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bayatch/Bayatch-Prefix.pch";
+				INFOPLIST_FILE = "BayatchTests/BayatchTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		45B0E59114CB32A8004E29E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Bayatch.app/Contents/MacOS/Bayatch";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bayatch/Bayatch-Prefix.pch";
+				INFOPLIST_FILE = "BayatchTests/BayatchTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45B0E52C14CB32A8004E29E7 /* Build configuration list for PBXProject "Bayatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45B0E58714CB32A8004E29E7 /* Debug */,
+				45B0E58814CB32A8004E29E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45B0E58914CB32A8004E29E7 /* Build configuration list for PBXNativeTarget "BayatchImporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45B0E58A14CB32A8004E29E7 /* Debug */,
+				45B0E58B14CB32A8004E29E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		45B0E58C14CB32A8004E29E7 /* Build configuration list for PBXNativeTarget "Bayatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45B0E58D14CB32A8004E29E7 /* Debug */,
+				45B0E58E14CB32A8004E29E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		45B0E58F14CB32A8004E29E7 /* Build configuration list for PBXNativeTarget "BayatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45B0E59014CB32A8004E29E7 /* Debug */,
+				45B0E59114CB32A8004E29E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		45B0E55114CB32A8004E29E7 /* CDocument.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				45B0E55214CB32A8004E29E7 /* CDocument.xcdatamodel */,
+			);
+			currentVersion = 45B0E55214CB32A8004E29E7 /* CDocument.xcdatamodel */;
+			path = CDocument.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 45B0E52914CB32A8004E29E7 /* Project object */;
+}
