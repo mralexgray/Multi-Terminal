@@ -28,6 +28,12 @@
 		45B0E57F14CB32A8004E29E7 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 45B0E57E14CB32A8004E29E7 /* main.c */; };
 		45B0E58114CB32A8004E29E7 /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B0E58014CB32A8004E29E7 /* GetMetadataForFile.m */; };
 		45B0E58414CB32A8004E29E7 /* MySpotlightImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B0E58314CB32A8004E29E7 /* MySpotlightImporter.m */; };
+		45B0E59414CB35D4004E29E7 /* CSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B0E59314CB35D4004E29E7 /* CSession.m */; };
+		45B26CAE14CBDD1400BBAE1E /* Terminal.icns in Resources */ = {isa = PBXBuildFile; fileRef = 45B26CAD14CBDD1400BBAE1E /* Terminal.icns */; };
+		45B26CB114CBDE8E00BBAE1E /* CellBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 45B26CB014CBDE8E00BBAE1E /* CellBackground.png */; };
+		45B26CB414CBDF2200BBAE1E /* NSValueTransformer_BlockExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B26CB314CBDF2200BBAE1E /* NSValueTransformer_BlockExtensions.m */; };
+		45B26CB714CBDFA000BBAE1E /* CBlockValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B26CB614CBDFA000BBAE1E /* CBlockValueTransformer.m */; };
+		45B26CB914CBE05A00BBAE1E /* CellBackgroundDefault.png in Resources */ = {isa = PBXBuildFile; fileRef = 45B26CB814CBE05A00BBAE1E /* CellBackgroundDefault.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,35 +59,44 @@
 		45B0E53914CB32A8004E29E7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		45B0E53A14CB32A8004E29E7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		45B0E53B14CB32A8004E29E7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		45B0E53E14CB32A8004E29E7 /* Bayatch-Info.plist */ = {isa = PBXFileReference; path = "Bayatch-Info.plist"; sourceTree = "<group>"; };
+		45B0E53E14CB32A8004E29E7 /* Bayatch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Bayatch-Info.plist"; sourceTree = "<group>"; };
 		45B0E54014CB32A8004E29E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		45B0E54214CB32A8004E29E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		45B0E54414CB32A8004E29E7 /* Bayatch-Prefix.pch */ = {isa = PBXFileReference; path = "Bayatch-Prefix.pch"; sourceTree = "<group>"; };
+		45B0E54414CB32A8004E29E7 /* Bayatch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bayatch-Prefix.pch"; sourceTree = "<group>"; };
 		45B0E54614CB32A8004E29E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		45B0E54814CB32A8004E29E7 /* CDocument.h */ = {isa = PBXFileReference; path = CDocument.h; sourceTree = "<group>"; };
+		45B0E54814CB32A8004E29E7 /* CDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDocument.h; sourceTree = "<group>"; };
 		45B0E54914CB32A8004E29E7 /* CDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDocument.m; sourceTree = "<group>"; };
 		45B0E54C14CB32A8004E29E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CDocument.xib; sourceTree = "<group>"; };
 		45B0E54F14CB32A8004E29E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		45B0E55214CB32A8004E29E7 /* CDocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CDocument.xcdatamodel; sourceTree = "<group>"; };
 		45B0E55914CB32A8004E29E7 /* BayatchTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BayatchTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45B0E55A14CB32A8004E29E7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		45B0E56114CB32A8004E29E7 /* BayatchTests-Info.plist */ = {isa = PBXFileReference; path = "BayatchTests-Info.plist"; sourceTree = "<group>"; };
+		45B0E56114CB32A8004E29E7 /* BayatchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BayatchTests-Info.plist"; sourceTree = "<group>"; };
 		45B0E56314CB32A8004E29E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		45B0E56514CB32A8004E29E7 /* BayatchTests.h */ = {isa = PBXFileReference; path = BayatchTests.h; sourceTree = "<group>"; };
+		45B0E56514CB32A8004E29E7 /* BayatchTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BayatchTests.h; sourceTree = "<group>"; };
 		45B0E56614CB32A8004E29E7 /* BayatchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BayatchTests.m; sourceTree = "<group>"; };
 		45B0E56C14CB32A8004E29E7 /* BayatchImporter.mdimporter */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BayatchImporter.mdimporter; sourceTree = BUILT_PRODUCTS_DIR; };
 		45B0E57014CB32A8004E29E7 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		45B0E57214CB32A8004E29E7 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		45B0E57414CB32A8004E29E7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		45B0E57614CB32A8004E29E7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		45B0E57A14CB32A8004E29E7 /* BayatchImporter-Info.plist */ = {isa = PBXFileReference; path = "BayatchImporter-Info.plist"; sourceTree = "<group>"; };
+		45B0E57A14CB32A8004E29E7 /* BayatchImporter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BayatchImporter-Info.plist"; sourceTree = "<group>"; };
 		45B0E57C14CB32A8004E29E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		45B0E57E14CB32A8004E29E7 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		45B0E58014CB32A8004E29E7 /* GetMetadataForFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetMetadataForFile.m; sourceTree = "<group>"; };
-		45B0E58214CB32A8004E29E7 /* MySpotlightImporter.h */ = {isa = PBXFileReference; path = MySpotlightImporter.h; sourceTree = "<group>"; };
+		45B0E58214CB32A8004E29E7 /* MySpotlightImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySpotlightImporter.h; sourceTree = "<group>"; };
 		45B0E58314CB32A8004E29E7 /* MySpotlightImporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySpotlightImporter.m; sourceTree = "<group>"; };
-		45B0E58514CB32A8004E29E7 /* Importer Read Me.txt */ = {isa = PBXFileReference; path = "Importer Read Me.txt"; sourceTree = "<group>"; };
-		45B0E58614CB32A8004E29E7 /* BayatchImporter-Prefix.pch */ = {isa = PBXFileReference; path = "BayatchImporter-Prefix.pch"; sourceTree = "<group>"; };
+		45B0E58514CB32A8004E29E7 /* Importer Read Me.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Importer Read Me.txt"; sourceTree = "<group>"; };
+		45B0E58614CB32A8004E29E7 /* BayatchImporter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BayatchImporter-Prefix.pch"; sourceTree = "<group>"; };
+		45B0E59214CB35D4004E29E7 /* CSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSession.h; sourceTree = "<group>"; };
+		45B0E59314CB35D4004E29E7 /* CSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSession.m; sourceTree = "<group>"; };
+		45B26CAD14CBDD1400BBAE1E /* Terminal.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Terminal.icns; sourceTree = "<group>"; };
+		45B26CB014CBDE8E00BBAE1E /* CellBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CellBackground.png; sourceTree = "<group>"; };
+		45B26CB214CBDF2200BBAE1E /* NSValueTransformer_BlockExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSValueTransformer_BlockExtensions.h; sourceTree = "<group>"; };
+		45B26CB314CBDF2200BBAE1E /* NSValueTransformer_BlockExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSValueTransformer_BlockExtensions.m; sourceTree = "<group>"; };
+		45B26CB514CBDFA000BBAE1E /* CBlockValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBlockValueTransformer.h; path = ../../../Development/Source/Git/touchcode_public/TouchFoundation/Source/Extensions/CBlockValueTransformer.h; sourceTree = "<group>"; };
+		45B26CB614CBDFA000BBAE1E /* CBlockValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBlockValueTransformer.m; path = ../../../Development/Source/Git/touchcode_public/TouchFoundation/Source/Extensions/CBlockValueTransformer.m; sourceTree = "<group>"; };
+		45B26CB814CBE05A00BBAE1E /* CellBackgroundDefault.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CellBackgroundDefault.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,8 +182,17 @@
 				45B0E54814CB32A8004E29E7 /* CDocument.h */,
 				45B0E54914CB32A8004E29E7 /* CDocument.m */,
 				45B0E54B14CB32A8004E29E7 /* CDocument.xib */,
+				45B0E59214CB35D4004E29E7 /* CSession.h */,
+				45B0E59314CB35D4004E29E7 /* CSession.m */,
 				45B0E54E14CB32A8004E29E7 /* MainMenu.xib */,
+				45B26CB014CBDE8E00BBAE1E /* CellBackground.png */,
+				45B26CB814CBE05A00BBAE1E /* CellBackgroundDefault.png */,
 				45B0E55114CB32A8004E29E7 /* CDocument.xcdatamodeld */,
+				45B26CAD14CBDD1400BBAE1E /* Terminal.icns */,
+				45B26CB514CBDFA000BBAE1E /* CBlockValueTransformer.h */,
+				45B26CB614CBDFA000BBAE1E /* CBlockValueTransformer.m */,
+				45B26CB214CBDF2200BBAE1E /* NSValueTransformer_BlockExtensions.h */,
+				45B26CB314CBDF2200BBAE1E /* NSValueTransformer_BlockExtensions.m */,
 				45B0E53D14CB32A8004E29E7 /* Supporting Files */,
 			);
 			path = Bayatch;
@@ -323,6 +347,9 @@
 				45B0E54D14CB32A8004E29E7 /* CDocument.xib in Resources */,
 				45B0E55014CB32A8004E29E7 /* MainMenu.xib in Resources */,
 				45B0E56F14CB32A8004E29E7 /* BayatchImporter.mdimporter in Resources */,
+				45B26CAE14CBDD1400BBAE1E /* Terminal.icns in Resources */,
+				45B26CB114CBDE8E00BBAE1E /* CellBackground.png in Resources */,
+				45B26CB914CBE05A00BBAE1E /* CellBackgroundDefault.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +395,9 @@
 				45B0E54314CB32A8004E29E7 /* main.m in Sources */,
 				45B0E54A14CB32A8004E29E7 /* CDocument.m in Sources */,
 				45B0E55314CB32A8004E29E7 /* CDocument.xcdatamodeld in Sources */,
+				45B0E59414CB35D4004E29E7 /* CSession.m in Sources */,
+				45B26CB414CBDF2200BBAE1E /* NSValueTransformer_BlockExtensions.m in Sources */,
+				45B26CB714CBDFA000BBAE1E /* CBlockValueTransformer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,6 +632,7 @@
 				45B0E58B14CB32A8004E29E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		45B0E58C14CB32A8004E29E7 /* Build configuration list for PBXNativeTarget "Bayatch" */ = {
 			isa = XCConfigurationList;
@@ -610,6 +641,7 @@
 				45B0E58E14CB32A8004E29E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		45B0E58F14CB32A8004E29E7 /* Build configuration list for PBXNativeTarget "BayatchTests" */ = {
 			isa = XCConfigurationList;
@@ -618,6 +650,7 @@
 				45B0E59114CB32A8004E29E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -8,34 +8,87 @@
 
 #import "CDocument.h"
 
+#import "CSession.h"
+#import "CBlockValueTransformer.h"
+
+@interface CDocument ()
+@property (readwrite, nonatomic, strong) NSArray *sessions;
+@property (readwrite, nonatomic, strong) IBOutlet NSArrayController *sessionsController;
+@property (readwrite, nonatomic, strong) NSString *script;
+@property (readwrite, nonatomic, strong) IBOutlet NSTextView *outputTextView;
+@end
+
+#pragma mark -
+
 @implementation CDocument
 
-- (id)init
-{
-    self = [super init];
-    if (self) {
-        // Add your subclass-specific initialization here.
-        // If an error occurs here, return nil.
+@synthesize sessions;
+@synthesize sessionsController;
+@synthesize script;
+@synthesize outputTextView;
+
++ (void)initialize
+    {
+    [NSValueTransformer setValueTransformerForName:@"xyzzy" block:^id(id value)
+        {
+        if ([value intValue] == NO)
+            {
+            return([NSImage imageNamed:@"CellBackgroundDefault.png"]);
+            }
+        else
+            {
+            return([NSImage imageNamed:@"CellBackground.png"]);
+            }
+        }];
     }
-    return self;
-}
-
-- (NSString *)windowNibName
-{
-    // Override returning the nib file name of the document
-    // If you need to use a subclass of NSWindowController or if your document supports multiple NSWindowControllers, you should remove this method and override -makeWindowControllers instead.
-    return @"CDocument";
-}
-
-- (void)windowControllerDidLoadNib:(NSWindowController *)aController
-{
-    [super windowControllerDidLoadNib:aController];
-    // Add any code here that needs to be executed once the windowController has loaded the document's window.
-}
 
 + (BOOL)autosavesInPlace
-{
+    {
     return YES;
-}
+    }
+    
+
+- (NSString *)windowNibName
+    {
+    return @"CDocument";
+    }
+
+- (void)windowControllerDidLoadNib:(NSWindowController *)aController
+    {
+    [super windowControllerDidLoadNib:aController];
+
+    self.outputTextView.font = [NSFont fontWithName:@"Menlo" size:13];
+
+
+    NSMutableArray *theSessions = [NSMutableArray array];
+    
+    NSURL *theURL = [NSURL fileURLWithPath:@"/Users/schwa/Development/Source/Git/Projects/• Old"];
+    NSError *theError = NULL;
+    NSArray *theContents = [[NSFileManager defaultManager] contentsOfDirectoryAtURL:theURL includingPropertiesForKeys:NULL options:NSDirectoryEnumerationSkipsHiddenFiles error:&theError];
+    for (NSURL *theURL in theContents)
+        {
+        NSNumber *theFlag;
+        [theURL getResourceValue:&theFlag forKey:NSURLIsDirectoryKey error:&theError];
+        if (theFlag.boolValue == YES)
+            {
+            CSession *theSession = [[CSession alloc] initWithURL:theURL];
+            [theSessions addObject:theSession];
+            }
+        }
+
+    self.sessions = [theSessions copy];
+    }
+
+- (IBAction)runScript:(id)sender
+    {
+    NSLog(@"RUN SCRIPT: %@", self.script);
+
+    
+
+    for (CSession *theSession in self.sessionsController.selectedObjects)
+        {
+        [theSession runScript:self.script handler:NULL];
+        }
+    }
 
 @end
