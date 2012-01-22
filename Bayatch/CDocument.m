@@ -8,11 +8,11 @@
 
 #import "CDocument.h"
 
-#import "CSession.h"
+#import "CDirectory.h"
 #import "CBlockValueTransformer.h"
 
 @interface CDocument ()
-@property (readwrite, nonatomic, strong) NSArray *sessions;
+@property (readwrite, nonatomic, strong) NSArray *directories;
 @property (readwrite, nonatomic, strong) IBOutlet NSArrayController *sessionsController;
 @property (readwrite, nonatomic, strong) NSString *script;
 @property (readwrite, nonatomic, strong) IBOutlet NSTextView *outputTextView;
@@ -22,7 +22,7 @@
 
 @implementation CDocument
 
-@synthesize sessions;
+@synthesize directories;
 @synthesize sessionsController;
 @synthesize script;
 @synthesize outputTextView;
@@ -60,7 +60,7 @@
     self.outputTextView.font = [NSFont fontWithName:@"Menlo" size:13];
 
 
-    NSMutableArray *theSessions = [NSMutableArray array];
+    NSMutableArray *theDirectories = [NSMutableArray array];
     
     NSURL *theURL = [NSURL fileURLWithPath:@"/Users/schwa/Development/Source/Git/Projects/• Old"];
     NSError *theError = NULL;
@@ -71,12 +71,12 @@
         [theURL getResourceValue:&theFlag forKey:NSURLIsDirectoryKey error:&theError];
         if (theFlag.boolValue == YES)
             {
-            CSession *theSession = [[CSession alloc] initWithURL:theURL];
-            [theSessions addObject:theSession];
+            CDirectory *theSession = [[CDirectory alloc] initWithURL:theURL];
+            [theDirectories addObject:theSession];
             }
         }
 
-    self.sessions = [theSessions copy];
+    self.directories = [theDirectories copy];
     }
 
 - (IBAction)runScript:(id)sender
@@ -85,7 +85,7 @@
 
     
 
-    for (CSession *theSession in self.sessionsController.selectedObjects)
+    for (CDirectory *theSession in self.sessionsController.selectedObjects)
         {
         [theSession runScript:self.script handler:NULL];
         }

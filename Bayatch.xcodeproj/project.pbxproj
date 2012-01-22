@@ -28,7 +28,7 @@
 		45B0E57F14CB32A8004E29E7 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 45B0E57E14CB32A8004E29E7 /* main.c */; };
 		45B0E58114CB32A8004E29E7 /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B0E58014CB32A8004E29E7 /* GetMetadataForFile.m */; };
 		45B0E58414CB32A8004E29E7 /* MySpotlightImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B0E58314CB32A8004E29E7 /* MySpotlightImporter.m */; };
-		45B0E59414CB35D4004E29E7 /* CSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B0E59314CB35D4004E29E7 /* CSession.m */; };
+		45B0E59414CB35D4004E29E7 /* CDirectory.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B0E59314CB35D4004E29E7 /* CDirectory.m */; };
 		45B26CAE14CBDD1400BBAE1E /* Terminal.icns in Resources */ = {isa = PBXBuildFile; fileRef = 45B26CAD14CBDD1400BBAE1E /* Terminal.icns */; };
 		45B26CB114CBDE8E00BBAE1E /* CellBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 45B26CB014CBDE8E00BBAE1E /* CellBackground.png */; };
 		45B26CB414CBDF2200BBAE1E /* NSValueTransformer_BlockExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B26CB314CBDF2200BBAE1E /* NSValueTransformer_BlockExtensions.m */; };
@@ -88,8 +88,8 @@
 		45B0E58314CB32A8004E29E7 /* MySpotlightImporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySpotlightImporter.m; sourceTree = "<group>"; };
 		45B0E58514CB32A8004E29E7 /* Importer Read Me.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Importer Read Me.txt"; sourceTree = "<group>"; };
 		45B0E58614CB32A8004E29E7 /* BayatchImporter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BayatchImporter-Prefix.pch"; sourceTree = "<group>"; };
-		45B0E59214CB35D4004E29E7 /* CSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSession.h; sourceTree = "<group>"; };
-		45B0E59314CB35D4004E29E7 /* CSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSession.m; sourceTree = "<group>"; };
+		45B0E59214CB35D4004E29E7 /* CDirectory.h */ = {isa = PBXFileReference; fileEncoding = 4; path = CDirectory.h; sourceTree = "<group>"; };
+		45B0E59314CB35D4004E29E7 /* CDirectory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDirectory.m; sourceTree = "<group>"; };
 		45B26CAD14CBDD1400BBAE1E /* Terminal.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Terminal.icns; sourceTree = "<group>"; };
 		45B26CB014CBDE8E00BBAE1E /* CellBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CellBackground.png; sourceTree = "<group>"; };
 		45B26CB214CBDF2200BBAE1E /* NSValueTransformer_BlockExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSValueTransformer_BlockExtensions.h; sourceTree = "<group>"; };
@@ -182,8 +182,8 @@
 				45B0E54814CB32A8004E29E7 /* CDocument.h */,
 				45B0E54914CB32A8004E29E7 /* CDocument.m */,
 				45B0E54B14CB32A8004E29E7 /* CDocument.xib */,
-				45B0E59214CB35D4004E29E7 /* CSession.h */,
-				45B0E59314CB35D4004E29E7 /* CSession.m */,
+				45B0E59214CB35D4004E29E7 /* CDirectory.h */,
+				45B0E59314CB35D4004E29E7 /* CDirectory.m */,
 				45B0E54E14CB32A8004E29E7 /* MainMenu.xib */,
 				45B26CB014CBDE8E00BBAE1E /* CellBackground.png */,
 				45B26CB814CBE05A00BBAE1E /* CellBackgroundDefault.png */,
@@ -395,7 +395,7 @@
 				45B0E54314CB32A8004E29E7 /* main.m in Sources */,
 				45B0E54A14CB32A8004E29E7 /* CDocument.m in Sources */,
 				45B0E55314CB32A8004E29E7 /* CDocument.xcdatamodeld in Sources */,
-				45B0E59414CB35D4004E29E7 /* CSession.m in Sources */,
+				45B0E59414CB35D4004E29E7 /* CDirectory.m in Sources */,
 				45B26CB414CBDF2200BBAE1E /* NSValueTransformer_BlockExtensions.m in Sources */,
 				45B26CB714CBDFA000BBAE1E /* CBlockValueTransformer.m in Sources */,
 			);
