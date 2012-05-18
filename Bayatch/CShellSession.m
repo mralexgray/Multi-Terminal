@@ -6,9 +6,9 @@
 //  Copyright (c) 2012 toxicsoftware.com. All rights reserved.
 //
 
-#import "CDirectory.h"
+#import "CShellSession.h"
 
-@implementation CDirectory
+@implementation CShellSession
 
 @synthesize URL;
 @synthesize title;
@@ -44,6 +44,8 @@
             NULL];
         theTask.currentDirectoryPath = self.URL.path;    
 
+
+
 //TERM_PROGRAM=Apple_Terminal
 //TERM=xterm-256color
 //SHELL=/bin/bash
@@ -76,14 +78,17 @@
 //_=/usr/bin/env
 
 
+NSMutableDictionary *theEnvironment = [[NSProcessInfo processInfo].environment copy];
+//[theEnvironment addEntriesFromDictionary:<#(NSDictionary *)#>
+//
+//        theTask.environment = [NSDictionary dictionaryWithObjectsAndKeys:
+//            @"xterm-256color", @"TERM",
+//            @"unix2003", @"COMMAND_MODE",
+////            @"en_US,UTF-8", @"LANG",
+//            @"C", @"LANG",
+//            NULL];
 
-        theTask.environment = [NSDictionary dictionaryWithObjectsAndKeys:
-            @"xterm-256color", @"TERM",
-            @"unix2003", @"COMMAND_MODE",
-//            @"en_US,UTF-8", @"LANG",
-            @"C", @"LANG",
-            NULL];
-
+        theTask.environment = theEnvironment;
         theTask.standardInput = [NSPipe pipe];
         theTask.standardError = theOutputPipe;
         theTask.standardOutput = theOutputPipe;

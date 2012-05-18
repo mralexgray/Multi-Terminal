@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CDirectory : NSObject
+@interface CShellSession : NSObject
 
 @property (readwrite, nonatomic, strong) NSURL *URL;
 @property (readwrite, nonatomic, strong) NSString *title;
