@@ -27,3 +27,5 @@ Of course not. It's a throw away github project. It "works for me". But needs mo
 * Correct terminal history
 * Zoom in/out on terminals
 * "Open in Terminal"
+* Quick filtering of sessions (quick hide/show sessions)
+* Search session output
