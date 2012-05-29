@@ -19,3 +19,11 @@ It seemed like a good idea at the time.
 ## Is it complete?
 
 Of course not. It's a throw away github project. It "works for me". But needs more work to be generally useful to other people.
+
+## TODO
+
+* Better interaction with grid view (drag & drop, command + delete, etc etc)
+* Real terminal support.
+* Correct terminal history
+* Zoom in/out on terminals
+* "Open in Terminal"
