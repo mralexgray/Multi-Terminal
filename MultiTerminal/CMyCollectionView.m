@@ -17,11 +17,8 @@
     if ((self = [super initWithCoder:inCoder]) != NULL)
         {
         [self registerForDraggedTypes:[NSArray arrayWithObjects:(__bridge id)kUTTypeDirectory, (__bridge id)kUTTypeFolder, NULL]];
-        NSLog(@"%@", self.registeredDraggedTypes);
-
         [self setDraggingSourceOperationMask:NSDragOperationEvery forLocal:YES];
         [self setDraggingSourceOperationMask:NSDragOperationEvery forLocal:NO];
-
         }
     return(self);
     }
@@ -34,9 +31,9 @@
     }
 
 -(NSDragOperation)draggingUpdated:(id<NSDraggingInfo>)sender
-{
+    {
     return [self draggingEntered:sender];
-}
+    }
 
 
 @end

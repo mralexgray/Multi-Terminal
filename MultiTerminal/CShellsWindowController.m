@@ -21,9 +21,9 @@
 
 @implementation CShellsWindowController
 
-@synthesize shellSessions;
-@synthesize sessionsController;
-@synthesize script;
+@synthesize shellSessions = _shellSessions;
+@synthesize sessionsController = _sessionsController;
+@synthesize script = _script;
 
 + (void)initialize
     {
@@ -40,6 +40,8 @@
         }];
     }
 
+#pragma mark -
+
 - (id)initWithWindow:(NSWindow *)window
     {
     if ((self = [super initWithWindow:window]) != NULL)
@@ -48,28 +50,60 @@
     return(self);
     }
 
+#pragma mark -
+
 - (void)windowDidLoad
     {
     [super windowDidLoad];
     
-    NSMutableArray *theDirectories = [NSMutableArray array];
-    
-    NSURL *theURL = [NSURL fileURLWithPath:@"/Users/schwa/Development/Source/Git/Projects/• Old"];
-    NSError *theError = NULL;
-    NSArray *theContents = [[NSFileManager defaultManager] contentsOfDirectoryAtURL:theURL includingPropertiesForKeys:NULL options:NSDirectoryEnumerationSkipsHiddenFiles error:&theError];
-    for (NSURL *theURL in theContents)
-        {
-        NSNumber *theFlag;
-        [theURL getResourceValue:&theFlag forKey:NSURLIsDirectoryKey error:&theError];
-        if (theFlag.boolValue == YES)
-            {
-            CShellSession *theSession = [[CShellSession alloc] initWithURL:theURL];
-            [theDirectories addObject:theSession];
-            }
-        }
+//    NSMutableArray *theSessions = [NSMutableArray array];
+//    
+//    NSURL *theURL = [NSURL fileURLWithPath:@"/Users/schwa/Development/Source/Git/Projects/• Old"];
+//    NSError *theError = NULL;
+//    NSArray *theContents = [[NSFileManager defaultManager] contentsOfDirectoryAtURL:theURL includingPropertiesForKeys:NULL options:NSDirectoryEnumerationSkipsHiddenFiles error:&theError];
+//    for (NSURL *theURL in theContents)
+//        {
+//        NSNumber *theFlag;
+//        [theURL getResourceValue:&theFlag forKey:NSURLIsDirectoryKey error:&theError];
+//        if (theFlag.boolValue == YES)
+//            {
+//            CShellSession *theSession = [[CShellSession alloc] initWithURL:theURL];
+//            [theSessions addObject:theSession];
+//            }
+//        }
 
-    self.shellSessions = [theDirectories copy];
+    self.shellSessions = [NSArray array];
+
+    [self loadSessions];
     }
+
+#pragma mark -
+
+- (void)loadSessions
+    {
+    NSData *theShellSessionsData = [[NSUserDefaults standardUserDefaults] objectForKey:@"shellSessions"];
+    if (theShellSessionsData == NULL)
+        {
+        return;
+        }
+    NSArray *theShellSessions = [NSKeyedUnarchiver unarchiveObjectWithData:theShellSessionsData];
+    if (theShellSessions == NULL)
+        {
+        return;
+        }
+    self.shellSessions = theShellSessions;
+    }
+
+- (void)saveSessions
+    {
+    NSData *theSessions = [NSKeyedArchiver archivedDataWithRootObject:self.shellSessions];
+
+    [[NSUserDefaults standardUserDefaults] setObject:theSessions forKey:@"shellSessions"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+
+#pragma mark -
+
 
 - (IBAction)runScript:(id)sender
     {
@@ -87,24 +121,25 @@
     theOpenPanel.canChooseDirectories = YES;
     theOpenPanel.canChooseFiles = NO;
     theOpenPanel.allowsMultipleSelection = YES;
-//    theOpenPanel.allowsOtherFileTypes
-    
     [theOpenPanel beginSheetModalForWindow:self.window completionHandler:^(NSInteger result) {
         if (result == NSFileHandlingPanelOKButton)
             {
             for (NSURL *theURL in theOpenPanel.URLs)
                 {
                 CShellSession *theSession = [[CShellSession alloc] initWithURL:theURL];
-                
                 self.shellSessions = [self.shellSessions arrayByAddingObject:theSession];
                 }
-
-
+            [self saveSessions];
             }
         }];
-    
     }
 
+- (IBAction)deleteBackward:(id)sender
+    {
+    [self.sessionsController removeObjects:self.sessionsController.selectedObjects];
+
+    [self saveSessions];
+    }
 
 #pragma mark -
 

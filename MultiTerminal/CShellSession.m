@@ -10,22 +10,41 @@
 
 @implementation CShellSession
 
-@synthesize URL;
-@synthesize title;
-@synthesize output;
-@synthesize status;
-@synthesize processing;
+@synthesize URL = _URL;
+@synthesize title = _title;
+@synthesize output = _output;
+@synthesize status = _status;
+@synthesize processing = _processing;
 
 - (id)initWithURL:(NSURL *)inURL
     {
     if ((self = [super init]) != NULL)
         {
-        URL = inURL;
-        title = inURL.lastPathComponent;
-        status = 0;
+        _URL = inURL;
+        _title = _URL.lastPathComponent;
+        _status = 0;
         }
     return self;
     }
+
+#pragma mark -
+
+- (void)encodeWithCoder:(NSCoder *)aCoder
+    {
+    [aCoder encodeObject:self.URL forKey:@"URL"];
+    }
+
+- (id)initWithCoder:(NSCoder *)aDecoder
+    {
+    if ((self = [super init]) != NULL)
+        {
+        _URL = [aDecoder decodeObjectForKey:@"URL"];
+        _title = _URL.lastPathComponent;
+        }
+    return self;
+    }
+
+#pragma mark -
 
 - (BOOL)runScript:(NSString *)inScript handler:(void (^)(int))inHandler;
     {
