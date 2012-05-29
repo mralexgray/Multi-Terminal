@@ -6,7 +6,7 @@ A Mac OS X GUI app for performing terminal commands in multiple directories at o
 
 See this screenshot:
 
-![Screenshot](Screenshot.png)
+![Screenshot](https://github.com/schwa/Multi-Terminal/raw/master/ScreenShot.png)
 
 ## Why?
 
