@@ -55,22 +55,6 @@
 - (void)windowDidLoad
     {
     [super windowDidLoad];
-    
-//    NSMutableArray *theSessions = [NSMutableArray array];
-//    
-//    NSURL *theURL = [NSURL fileURLWithPath:@"/Users/schwa/Development/Source/Git/Projects/• Old"];
-//    NSError *theError = NULL;
-//    NSArray *theContents = [[NSFileManager defaultManager] contentsOfDirectoryAtURL:theURL includingPropertiesForKeys:NULL options:NSDirectoryEnumerationSkipsHiddenFiles error:&theError];
-//    for (NSURL *theURL in theContents)
-//        {
-//        NSNumber *theFlag;
-//        [theURL getResourceValue:&theFlag forKey:NSURLIsDirectoryKey error:&theError];
-//        if (theFlag.boolValue == YES)
-//            {
-//            CShellSession *theSession = [[CShellSession alloc] initWithURL:theURL];
-//            [theSessions addObject:theSession];
-//            }
-//        }
 
     self.shellSessions = [NSArray array];
 
@@ -103,7 +87,6 @@
     }
 
 #pragma mark -
-
 
 - (IBAction)runScript:(id)sender
     {
