@@ -44,41 +44,7 @@
             NULL];
         theTask.currentDirectoryPath = self.URL.path;    
 
-
-
-//TERM_PROGRAM=Apple_Terminal
-//TERM=xterm-256color
-//SHELL=/bin/bash
-//TMPDIR=/var/folders/c9/pqvs14g940j9q5dxgh8njsnh0000gn/T/
-//Apple_PubSub_Socket_Render=/tmp/launch-kPmlcb/Render
-//TERM_PROGRAM_VERSION=299
-//TERM_SESSION_ID=BBC564E6-C87C-44CE-A058-D86F2CE73C56
-//PYTHONUSERBASE=/Users/schwa/Library/Python
-//HISTFILESIZE=10000
-//USER=schwa
-//COMMAND_MODE=unix2003
-//SSH_AUTH_SOCK=/tmp/launch-hbR2Cm/Listeners
-//__CF_USER_TEXT_ENCODING=0x1F5:0:0
-//LSCOLORS=cxbxFxFxFxFxxxxxxxxxxx
-//PYTHONBIN=/Users/schwa/Library/Python/bin
-//PATH=/Users/schwa/bin:/Users/schwa/Library/Python/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/mysql/bin:/Developer/Tools:/Developer/usr/bin::/Users/schwa/.gem/ruby/1.8/bin
-//PWD=/Users/schwa
-//EDITOR=bbedit -w
-//HOMEBREW_LLVM=1
-//LANG=en_US.UTF-8
-//PYTHONSTARTUP=/Users/schwa/.pythonrc
-//NODE_PATH=/usr/local/lib/node
-//PS1=[\u@\h] \W$ 
-//SHLVL=1
-//HOME=/Users/schwa
-//PYTHONPATH=:/Library/Python:/Users/schwa/Library/Python/User
-//LOGNAME=schwa
-//DISPLAY=/tmp/launch-vGD7bl/org.x:0
-//RUBYBIN=/Users/schwa/.gem/ruby/1.8/bin
-//_=/usr/bin/env
-
-
-NSMutableDictionary *theEnvironment = [[NSProcessInfo processInfo].environment copy];
+        NSMutableDictionary *theEnvironment = [[NSProcessInfo processInfo].environment copy];
 //[theEnvironment addEntriesFromDictionary:<#(NSDictionary *)#>
 //
 //        theTask.environment = [NSDictionary dictionaryWithObjectsAndKeys:
@@ -98,9 +64,6 @@ NSMutableDictionary *theEnvironment = [[NSProcessInfo processInfo].environment c
         [theTask waitUntilExit];
         
         self.status = theTask.terminationStatus;
-        
-
-        
 
         NSString *theString = [[NSString alloc] initWithData:theData encoding:NSUTF8StringEncoding];
         dispatch_sync(dispatch_get_main_queue(), ^{
@@ -108,15 +71,6 @@ NSMutableDictionary *theEnvironment = [[NSProcessInfo processInfo].environment c
             self.processing = NO;
             });
         });
-    
-//    - (void)setLaunchPath:(NSString *)path;
-//- (void)setArguments:(NSArray *)arguments;
-//- (void)setEnvironment:(NSDictionary *)dict;
-//	// if not set, use current
-//- (void)setCurrentDirectoryPath:(NSString *)path;
-
-    
-    
     
     return(YES);
     }
