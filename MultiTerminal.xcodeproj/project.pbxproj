@@ -17,25 +17,11 @@
 		45B0E54314CB32A8004E29E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B0E54214CB32A8004E29E7 /* main.m */; };
 		45B0E54714CB32A8004E29E7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 45B0E54514CB32A8004E29E7 /* Credits.rtf */; };
 		45B0E55014CB32A8004E29E7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45B0E54E14CB32A8004E29E7 /* MainMenu.xib */; };
-		45B0E55B14CB32A8004E29E7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B0E55A14CB32A8004E29E7 /* SenTestingKit.framework */; };
-		45B0E55C14CB32A8004E29E7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B0E53614CB32A8004E29E7 /* Cocoa.framework */; };
-		45B0E56414CB32A8004E29E7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45B0E56214CB32A8004E29E7 /* InfoPlist.strings */; };
-		45B0E56714CB32A8004E29E7 /* BayatchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B0E56614CB32A8004E29E7 /* BayatchTests.m */; };
 		45B0E59414CB35D4004E29E7 /* CShellSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B0E59314CB35D4004E29E7 /* CShellSession.m */; };
 		45B26CB114CBDE8E00BBAE1E /* CellBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 45B26CB014CBDE8E00BBAE1E /* CellBackground.png */; };
 		45B26CB414CBDF2200BBAE1E /* NSValueTransformer_BlockExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B26CB314CBDF2200BBAE1E /* NSValueTransformer_BlockExtensions.m */; };
 		45B26CB914CBE05A00BBAE1E /* CellBackgroundDefault.png in Resources */ = {isa = PBXBuildFile; fileRef = 45B26CB814CBE05A00BBAE1E /* CellBackgroundDefault.png */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		45B0E55D14CB32A8004E29E7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 45B0E52914CB32A8004E29E7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 45B0E53114CB32A8004E29E7;
-			remoteInfo = Bayatch;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4517E69414CE8C0000175540 /* CShellsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CShellsWindowController.h; sourceTree = "<group>"; };
@@ -47,23 +33,18 @@
 		4517E69E14CE92C900175540 /* CMyCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMyCollectionView.m; sourceTree = "<group>"; };
 		453D8C591566BE7F00692AD6 /* CBlockValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBlockValueTransformer.h; sourceTree = "<group>"; };
 		453D8C5A1566BE7F00692AD6 /* CBlockValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBlockValueTransformer.m; sourceTree = "<group>"; };
-		45B0E53214CB32A8004E29E7 /* Bayatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bayatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45B0E53214CB32A8004E29E7 /* MultiTerminal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiTerminal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45B0E53614CB32A8004E29E7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		45B0E53914CB32A8004E29E7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		45B0E53A14CB32A8004E29E7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		45B0E53B14CB32A8004E29E7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		45B0E53E14CB32A8004E29E7 /* Bayatch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Bayatch-Info.plist"; sourceTree = "<group>"; };
+		45B0E53E14CB32A8004E29E7 /* MultiTerminal-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MultiTerminal-Info.plist"; sourceTree = "<group>"; };
 		45B0E54014CB32A8004E29E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		45B0E54214CB32A8004E29E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		45B0E54414CB32A8004E29E7 /* Bayatch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bayatch-Prefix.pch"; sourceTree = "<group>"; };
+		45B0E54414CB32A8004E29E7 /* MultiTerminal-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MultiTerminal-Prefix.pch"; sourceTree = "<group>"; };
 		45B0E54614CB32A8004E29E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		45B0E54F14CB32A8004E29E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		45B0E55914CB32A8004E29E7 /* BayatchTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BayatchTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45B0E55A14CB32A8004E29E7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		45B0E56114CB32A8004E29E7 /* BayatchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BayatchTests-Info.plist"; sourceTree = "<group>"; };
-		45B0E56314CB32A8004E29E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		45B0E56514CB32A8004E29E7 /* BayatchTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BayatchTests.h; sourceTree = "<group>"; };
-		45B0E56614CB32A8004E29E7 /* BayatchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BayatchTests.m; sourceTree = "<group>"; };
 		45B0E57014CB32A8004E29E7 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		45B0E57214CB32A8004E29E7 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		45B0E57414CB32A8004E29E7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -85,15 +66,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		45B0E55514CB32A8004E29E7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				45B0E55B14CB32A8004E29E7 /* SenTestingKit.framework in Frameworks */,
-				45B0E55C14CB32A8004E29E7 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -111,8 +83,7 @@
 		45B0E52714CB32A8004E29E7 = {
 			isa = PBXGroup;
 			children = (
-				45B0E53C14CB32A8004E29E7 /* Bayatch */,
-				45B0E55F14CB32A8004E29E7 /* BayatchTests */,
+				45B0E53C14CB32A8004E29E7 /* MultiTerminal */,
 				45B0E53514CB32A8004E29E7 /* Frameworks */,
 				45B0E53314CB32A8004E29E7 /* Products */,
 			);
@@ -121,8 +92,7 @@
 		45B0E53314CB32A8004E29E7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				45B0E53214CB32A8004E29E7 /* Bayatch.app */,
-				45B0E55914CB32A8004E29E7 /* BayatchTests.octest */,
+				45B0E53214CB32A8004E29E7 /* MultiTerminal.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,7 +121,7 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		45B0E53C14CB32A8004E29E7 /* Bayatch */ = {
+		45B0E53C14CB32A8004E29E7 /* MultiTerminal */ = {
 			isa = PBXGroup;
 			children = (
 				45B0E59214CB35D4004E29E7 /* CShellSession.h */,
@@ -169,36 +139,17 @@
 				4517E69A14CE8E1900175540 /* CMainController.h */,
 				4517E69B14CE8E1900175540 /* CMainController.m */,
 			);
-			path = Bayatch;
+			path = MultiTerminal;
 			sourceTree = "<group>";
 		};
 		45B0E53D14CB32A8004E29E7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				45B0E53E14CB32A8004E29E7 /* Bayatch-Info.plist */,
+				45B0E53E14CB32A8004E29E7 /* MultiTerminal-Info.plist */,
 				45B0E53F14CB32A8004E29E7 /* InfoPlist.strings */,
 				45B0E54214CB32A8004E29E7 /* main.m */,
-				45B0E54414CB32A8004E29E7 /* Bayatch-Prefix.pch */,
+				45B0E54414CB32A8004E29E7 /* MultiTerminal-Prefix.pch */,
 				45B0E54514CB32A8004E29E7 /* Credits.rtf */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		45B0E55F14CB32A8004E29E7 /* BayatchTests */ = {
-			isa = PBXGroup;
-			children = (
-				45B0E56514CB32A8004E29E7 /* BayatchTests.h */,
-				45B0E56614CB32A8004E29E7 /* BayatchTests.m */,
-				45B0E56014CB32A8004E29E7 /* Supporting Files */,
-			);
-			path = BayatchTests;
-			sourceTree = "<group>";
-		};
-		45B0E56014CB32A8004E29E7 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				45B0E56114CB32A8004E29E7 /* BayatchTests-Info.plist */,
-				45B0E56214CB32A8004E29E7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -206,9 +157,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		45B0E53114CB32A8004E29E7 /* Bayatch */ = {
+		45B0E53114CB32A8004E29E7 /* MultiTerminal */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 45B0E58C14CB32A8004E29E7 /* Build configuration list for PBXNativeTarget "Bayatch" */;
+			buildConfigurationList = 45B0E58C14CB32A8004E29E7 /* Build configuration list for PBXNativeTarget "MultiTerminal" */;
 			buildPhases = (
 				45B0E52E14CB32A8004E29E7 /* Sources */,
 				45B0E52F14CB32A8004E29E7 /* Frameworks */,
@@ -218,29 +169,10 @@
 			);
 			dependencies = (
 			);
-			name = Bayatch;
+			name = MultiTerminal;
 			productName = Bayatch;
-			productReference = 45B0E53214CB32A8004E29E7 /* Bayatch.app */;
+			productReference = 45B0E53214CB32A8004E29E7 /* MultiTerminal.app */;
 			productType = "com.apple.product-type.application";
-		};
-		45B0E55814CB32A8004E29E7 /* BayatchTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 45B0E58F14CB32A8004E29E7 /* Build configuration list for PBXNativeTarget "BayatchTests" */;
-			buildPhases = (
-				45B0E55414CB32A8004E29E7 /* Sources */,
-				45B0E55514CB32A8004E29E7 /* Frameworks */,
-				45B0E55614CB32A8004E29E7 /* Resources */,
-				45B0E55714CB32A8004E29E7 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				45B0E55E14CB32A8004E29E7 /* PBXTargetDependency */,
-			);
-			name = BayatchTests;
-			productName = BayatchTests;
-			productReference = 45B0E55914CB32A8004E29E7 /* BayatchTests.octest */;
-			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -251,7 +183,7 @@
 				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = toxicsoftware.com;
 			};
-			buildConfigurationList = 45B0E52C14CB32A8004E29E7 /* Build configuration list for PBXProject "Bayatch" */;
+			buildConfigurationList = 45B0E52C14CB32A8004E29E7 /* Build configuration list for PBXProject "MultiTerminal" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -263,8 +195,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				45B0E53114CB32A8004E29E7 /* Bayatch */,
-				45B0E55814CB32A8004E29E7 /* BayatchTests */,
+				45B0E53114CB32A8004E29E7 /* MultiTerminal */,
 			);
 		};
 /* End PBXProject section */
@@ -283,31 +214,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		45B0E55614CB32A8004E29E7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				45B0E56414CB32A8004E29E7 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		45B0E55714CB32A8004E29E7 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		45B0E52E14CB32A8004E29E7 /* Sources */ = {
@@ -324,23 +231,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		45B0E55414CB32A8004E29E7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				45B0E56714CB32A8004E29E7 /* BayatchTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		45B0E55E14CB32A8004E29E7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 45B0E53114CB32A8004E29E7 /* Bayatch */;
-			targetProxy = 45B0E55D14CB32A8004E29E7 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		45B0E53F14CB32A8004E29E7 /* InfoPlist.strings */ = {
@@ -365,14 +256,6 @@
 				45B0E54F14CB32A8004E29E7 /* en */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		45B0E56214CB32A8004E29E7 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				45B0E56314CB32A8004E29E7 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -429,9 +312,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Bayatch/Bayatch-Prefix.pch";
-				INFOPLIST_FILE = "Bayatch/Bayatch-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "MultiTerminal/MultiTerminal-Prefix.pch";
+				INFOPLIST_FILE = "MultiTerminal/MultiTerminal-Info.plist";
+				PRODUCT_NAME = MultiTerminal;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -440,45 +323,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Bayatch/Bayatch-Prefix.pch";
-				INFOPLIST_FILE = "Bayatch/Bayatch-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "MultiTerminal/MultiTerminal-Prefix.pch";
+				INFOPLIST_FILE = "MultiTerminal/MultiTerminal-Info.plist";
+				PRODUCT_NAME = MultiTerminal;
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		45B0E59014CB32A8004E29E7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Bayatch.app/Contents/MacOS/Bayatch";
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Bayatch/Bayatch-Prefix.pch";
-				INFOPLIST_FILE = "BayatchTests/BayatchTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		45B0E59114CB32A8004E29E7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Bayatch.app/Contents/MacOS/Bayatch";
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Bayatch/Bayatch-Prefix.pch";
-				INFOPLIST_FILE = "BayatchTests/BayatchTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		45B0E52C14CB32A8004E29E7 /* Build configuration list for PBXProject "Bayatch" */ = {
+		45B0E52C14CB32A8004E29E7 /* Build configuration list for PBXProject "MultiTerminal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				45B0E58714CB32A8004E29E7 /* Debug */,
@@ -487,20 +342,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		45B0E58C14CB32A8004E29E7 /* Build configuration list for PBXNativeTarget "Bayatch" */ = {
+		45B0E58C14CB32A8004E29E7 /* Build configuration list for PBXNativeTarget "MultiTerminal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				45B0E58D14CB32A8004E29E7 /* Debug */,
 				45B0E58E14CB32A8004E29E7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		45B0E58F14CB32A8004E29E7 /* Build configuration list for PBXNativeTarget "BayatchTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				45B0E59014CB32A8004E29E7 /* Debug */,
-				45B0E59114CB32A8004E29E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

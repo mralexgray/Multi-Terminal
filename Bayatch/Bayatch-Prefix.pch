@@ -1,7 +1,0 @@
-//
-// Prefix header for all source files of the 'Bayatch' target in the 'Bayatch' project
-//
-
-#ifdef __OBJC__
-    #import <Cocoa/Cocoa.h>
-#endif
