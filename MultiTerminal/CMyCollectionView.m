@@ -16,7 +16,7 @@
     {
     if ((self = [super initWithCoder:inCoder]) != NULL)
         {
-        [self registerForDraggedTypes:[NSArray arrayWithObjects:(__bridge id)kUTTypeDirectory, (__bridge id)kUTTypeFolder, NULL]];
+        [self registerForDraggedTypes:@[(__bridge id)kUTTypeDirectory, (__bridge id)kUTTypeFolder]];
         [self setDraggingSourceOperationMask:NSDragOperationEvery forLocal:YES];
         [self setDraggingSourceOperationMask:NSDragOperationEvery forLocal:NO];
         }
@@ -27,7 +27,7 @@
     {
     [super viewDidMoveToWindow];
     
-    [self.enclosingScrollView registerForDraggedTypes:[NSArray arrayWithObjects:(__bridge id)kUTTypeDirectory, (__bridge id)kUTTypeFolder, NULL]];
+    [self.enclosingScrollView registerForDraggedTypes:@[(__bridge id)kUTTypeDirectory, (__bridge id)kUTTypeFolder]];
     }
 
 -(NSDragOperation)draggingUpdated:(id<NSDraggingInfo>)sender

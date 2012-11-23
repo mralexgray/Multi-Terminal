@@ -21,10 +21,6 @@
 
 @implementation CShellsWindowController
 
-@synthesize shellSessions = _shellSessions;
-@synthesize sessionsController = _sessionsController;
-@synthesize script = _script;
-
 + (void)initialize
     {
     [NSValueTransformer setValueTransformerForName:@"xyzzy" block:^id(id value)
@@ -56,7 +52,7 @@
     {
     [super windowDidLoad];
 
-    self.shellSessions = [NSArray array];
+    self.shellSessions = @[];
 
     [self loadSessions];
     }

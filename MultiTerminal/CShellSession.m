@@ -10,12 +10,6 @@
 
 @implementation CShellSession
 
-@synthesize URL = _URL;
-@synthesize title = _title;
-@synthesize output = _output;
-@synthesize status = _status;
-@synthesize processing = _processing;
-
 - (id)initWithURL:(NSURL *)inURL
     {
     if ((self = [super init]) != NULL)
@@ -56,11 +50,9 @@
 
         NSTask *theTask = [[NSTask alloc] init];
         theTask.launchPath = @"/bin/bash";
-        theTask.arguments = [NSArray arrayWithObjects:
-            @"--login",
+        theTask.arguments = @[@"--login",
             @"-c",
-            inScript,
-            NULL];
+            inScript];
         theTask.currentDirectoryPath = self.URL.path;    
 
         NSMutableDictionary *theEnvironment = [[NSProcessInfo processInfo].environment copy];

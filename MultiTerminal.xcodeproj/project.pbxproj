@@ -180,7 +180,7 @@
 		45B0E52914CB32A8004E29E7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = toxicsoftware.com;
 			};
 			buildConfigurationList = 45B0E52C14CB32A8004E29E7 /* Build configuration list for PBXProject "MultiTerminal" */;
@@ -311,6 +311,7 @@
 		45B0E58D14CB32A8004E29E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MultiTerminal/MultiTerminal-Prefix.pch";
 				INFOPLIST_FILE = "MultiTerminal/MultiTerminal-Info.plist";
@@ -322,6 +323,7 @@
 		45B0E58E14CB32A8004E29E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MultiTerminal/MultiTerminal-Prefix.pch";
 				INFOPLIST_FILE = "MultiTerminal/MultiTerminal-Info.plist";
