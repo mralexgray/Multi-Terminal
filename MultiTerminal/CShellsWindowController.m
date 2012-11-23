@@ -113,12 +113,43 @@
         }];
     }
 
+- (IBAction)filterOut:(id)sender
+	{
+	CShellSession *theFilteredSession = self.sessionsController.selectedObjects[0];
+
+	NSMutableArray *theNewSessions = [self.shellSessions mutableCopy];
+
+	for (CShellSession *theSession in self.shellSessions)
+		{
+		if ([theFilteredSession.output isEqualToString:theSession.output])
+			{
+			[theNewSessions removeObject:theSession];
+			}
+		}
+	self.shellSessions = [theNewSessions copy];
+
+    [self saveSessions];
+	}
+
+- (IBAction)openTerminal:(id)sender
+	{
+	for (CShellSession *theSession in self.sessionsController.selectedObjects)
+		{
+
+		[[NSWorkspace sharedWorkspace] openURLs:@[ theSession.URL ] withAppBundleIdentifier:@"com.apple.Terminal" options:NSWorkspaceLaunchDefault additionalEventParamDescriptor:NULL launchIdentifiers:NULL];
+
+
+		}
+	}
+
 - (IBAction)deleteBackward:(id)sender
     {
     [self.sessionsController removeObjects:self.sessionsController.selectedObjects];
 
     [self saveSessions];
     }
+
+
 
 #pragma mark -
 
